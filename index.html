@@ -29,9 +29,7 @@
     </style>
 </head>
 <body>
-    <button type="button"
-    onclick="document.getElementById('demo').innerHTML = Date()">Apasă aici pentru a vedea data şi ora exactă.</button>
-    <p id="demo"></p>
+    
 
     <p id="demo1">JS poate schimba conţinut HTML</p>
     <button type="button" onclick='document.getElementById("demo1").innerHTML = "COJI! Apasă şi mai jos."'>Apasă-mă pentru a vedea efectul</button>
@@ -41,12 +39,19 @@
 <p>Fii parte din soluţie, nu din problemă. #FăRaiDinCeAi</p>
 <p>Recenzie pentru profilul inginerie biochimică, FCIC.</p>
 <p>Exemplu vizual al respectului pe care îl arată conducerea facultăţii pentru moştenirea spirituală chimică.</p>
-<img src="fundal.jpg" alt="Cărţi vechi, aruncate de la etaj. Respectul conducerii facultăţii pentru moştenirea chimică."width="400" heiht="300">
+
+<img id="cartiaruncate" src="fundal.jpg" alt="Cărţi vechi, aruncate de la etaj." style="width:300px">
+
 <p id="demo2">Detalii despre motivul pentru care cărţile acelea au fost aruncate de la etaj </p>
 <button type="button" onclick="document.getElementById('demo2').innerHTML ='Facultatea a intrat în renovare în acel an. S-au făcut schimbări în organigrama sălilor. Noua sală de lectură era ocupată de cărţi aşa că au fost aruncate.'">Apasă aici pentru detalii</button>
+
+<button onclick="document.getElementById('cartiaruncate').src ='dislike.jpg'">Reacţia unor studenţi când au văzut cărţile aruncate</button>
 
 <p>Atunci când apeşi pe una din legăturile de mai jos, culoarea fontului lor se schimbă din roşu în mov.</p>
 <a href="https://www.chem.ubbcluj.ro">Site-ul facultăţii de chimie din Cluj-Napoca</a><br>
 <a href="https://www.google.ro">Motorul de căutare cel mai comun, Google</a>
+<button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">Apasă aici pentru a vedea data şi ora exactă.</button>
+    <p id="demo"></p>
 </body>
 </html>
