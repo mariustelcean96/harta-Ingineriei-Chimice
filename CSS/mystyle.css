@@ -17,7 +17,7 @@ body {
             text-align: center;
         }
         p {
-            font-family: Verdana;
+            font-family: courier;
             font-size: 19px;
             text-align: left;
             color:CadetBlue
@@ -26,6 +26,6 @@ body {
         .textdeinlocuit {color:grey; text-align:center;}
 address {
 color:DimGrey;
-font-size:12px;
+font-size:13px;
 text-align:justify;
 }
