@@ -3,6 +3,7 @@ body {
    color:blue;
    display:block;
    margin:80px;
+   font-family: courier;
 }
 
         a:link {
@@ -25,7 +26,6 @@ body {
         .textdeinlocuit {color:grey; text-align:center;}
 address {
 color:DimGrey;
-font-size:6px;
+font-size:12px;
 text-align:justify;
-font-family:Ubuntu;
 }
