@@ -13,10 +13,24 @@ body {
    }
 a:link {
     color: #3013d1fa;
+    text-decoration: none;
+    background-color: transparent;
     }
 a:visited {
-    color: #a302a3;
+    color: pink;
+    text-decoration: none;
+    background-color: transparent;
     }
+a:hover {
+        color: red;
+        text-decoration: underline;
+        background-color: transparent;
+    }
+a:active {
+    background-color: transparent;
+    color: yellow;
+    text-decoration: none;
+}
 h1 {
     color: rgb(12, 60, 61);
     font-size:medium;
