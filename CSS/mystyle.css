@@ -76,3 +76,7 @@ figure {
     max-width: 600px;
     margin: auto;
 }
+li {
+    padding:5px;
+    letter-spacing:1px;
+}
