@@ -5,15 +5,11 @@
     <title>Hai la facultate - Transparentizăm învăţământul superior din România</title>
 <!--Elementele de stilizare CSS se vor regăsi exclusiv într-un fișier .css separat.*/--> 
 <link rel="stylesheet" type="text/css" href="CSS/mystyle.css">
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body>
 <!-- Site-ul va conține în cele din urmă toate informațiile esențiale de care are nevoie un viitor student pentru a găsi facultatea dorită.-->
-
-<h1>Test</h1>    
-<h2 style="margin: 15px; padding: 15px; border: 1px solid Black;background-color: hsl(30, 100%, 85%);">#FăRaiDinCeAi</h2>
-<script>
-window.alert("Mesaj pentru Marius: Te rog frumos să continui cu renovarea bucătăriei. Ai destule chestii pe care le poţi face şi fără să mai faci în camera a treia.");
-</script>
 <table>
     <tr>
         <td><a href="agregatorjoburi.htm" style="font-size:large;">Locuri de muncă</a></td>
@@ -21,7 +17,11 @@ window.alert("Mesaj pentru Marius: Te rog frumos să continui cu renovarea bucă
         <td><a href="despresite.htm">Ideea site-ului</a></td>
     </tr>
 </table>
-
+<h1>Test</h1>    
+<h2 style="margin: 15px; padding: 15px; border: 1px solid Black;background-color: hsl(30, 100%, 85%);">#FăRaiDinCeAi</h2>
+<script>
+window.alert("Mesaj pentru Marius: Te rog frumos să continui cu renovarea bucătăriei. Ai destule chestii pe care le poţi face şi fără să mai faci în camera a treia.");
+</script>
     <p id="demo1">Voi duce sau nu voi duce acest proiect la bun sfârşit?</p>
     <button type="button" onclick='document.getElementById("demo1").innerHTML = "Eu zic că da."'>Răspuns</button>
 
@@ -30,18 +30,23 @@ window.alert("Mesaj pentru Marius: Te rog frumos să continui cu renovarea bucă
 <p title="Sper">Fii parte din soluţie, nu din problemă.</p>
 
 <p class="titluriprinc" title="Sigur vom reuşi.">Sub, voi insera hărţi Google/alternativă gratuită pentru a se putea găsi orice facultate din ţară.</p>
-<p class="textdeinlocuit" title="Temporar">(hărţi)</p>
+<div id='map' style='width: 800px; height: 600px; margin: 0 auto;'></div>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoibWFyaXVzdGVsY2VhbiIsImEiOiJja25lOGJjdTgxcDRoMnBtdTQzMjFyanhjIn0.RO6ggGYC5XY6-21ZNwtlwA';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11'
+  });
+</script>
 <p class="titluriprinc" title="Doar că trebuie muultă muncă.">Apoi aş vrea să inserez un desfăşurător pe judeţe, localităţi, facultăţi. Rezultatele afişate să poată fi filtrate în funcţie de universitate, facultate, profil, notă VLF.</p>
 <p class="textdeinlocuit" title="temporar">(Desfăşurător cu interogări din baze de date.)</p>
 <p class="titluriprinc" title="Îmi place să pun metadata de genul acesta.">Urmează o prezentare cu diaporame care se derulează singure şi în care sunt redate impresiile celor care au folosit site-ul.</p>
 <p class="textdeinlocuit" title="Ok, gata. Am învăţat sintaxa.">Recenzia1, Recenzia2, şamd.</p>
 
-
 <img id="demo5" src="campusHd.jpg" alt="Ce rămâne după studenţi" style="width:250px" hidden="true"><br>
 <button type="button" onclick="document.getElementById('demo5').style.display='block'">Frigidere vechi, abandonate în campus ajung la gunoi.</button>
 <p>Atunci când apeşi pe una din legăturile de mai jos, culoarea fontului lor se schimbă din roşu în mov.</p>
-<a href="https://www.chem.ubbcluj.ro">Site-ul facultăţii de chimie din Cluj-Napoca</a><br>
-<a href="https://www.google.ro">Motorul de căutare cel mai comun, Google</a><br>
+
 <button type="button"
     onclick="document.getElementById('demo').innerHTML = Date()">Apasă aici pentru a vedea data şi ora exactă.</button>
     <p id="demo"></p>

@@ -4,21 +4,34 @@
         <meta charset="utf-8">
         <title>Agregator de joburi pentru ingineri chimişti</title>
         <!--Elementele de stilizare se găsesc în fişierul mystyle.css din dosarul CSS.-->
-        <link rel="stylesheet" type="text/css" href="CSS/mystyle.css">
+<link rel="stylesheet" title="text/css" href="CSS/mystyle.css">
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+
     </head>
     <body>
         <table>
             <tr>
-                <td>
-                    <a href="index.html">Acasă</a>
-                </td>
+                <td><a href="index.html" title="Home">Acasă</a></td>
+                <td><a href="#C1" title="Current Job Offers">Oportunităţi disponibile</a></td>
+                <td><a href="#C2" title="Jobs Archive">Arhivă de oferte</a></td>
             </tr>
         </table>
         
         <p class="titluriprinc">Mi-ar plăcea să inserez o hartă Google cu toate companiile evidenţiate.</h1>
-        <p class="textdeinlocuit" style="text-align:center;">Hărţi Google</p>
+        
+<div id='map' style='width: 800px; height: 600px; margin: 0 auto;'></div>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoibWFyaXVzdGVsY2VhbiIsImEiOiJja25lOGJjdTgxcDRoMnBtdTQzMjFyanhjIn0.RO6ggGYC5XY6-21ZNwtlwA';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11'
+  });
+</script>
+
+       
     <p class="titluriprinc">Apoi o listă cu joburile cel mai recent apărute</h1></p>
-    <em>Oportunităţi active la data de 4 aprilie 2021.</em><hr>
+    <h1 id="C1">Oportunităţi active la data de 4 aprilie 2021.</h1>
 <ul>
     <li>Emerson Bootcamp (Simulări şi Măsurători) precum şi <a href="https://emerson.taleo.net/careersection/ex/jobsearch.ftl?">alte oportunităţi</a> <a href="/imaginijob/programul-apprentice-emerson.jpg">Ucenicie la Emerson (studenţi în ultimul an)</a></li>
     * Sunteţi încurajaţi să aplicaţi pentru posturile de: <em>Inside Sales Engineer</em> şi cel de <em>Inside Sales Internship.</em>
@@ -28,15 +41,17 @@
     <a href="https://www.azomures.com/internship/">Stagiu de practică (Internship)</a><br>
     <a href="https://www.azomures.com/posturi-vacante/">Posturi vacante</a>
     <li>Purolite (joburile sunt postate <a href="https://www.bestjobs.eu/ro/firme/purolite">pe site-ul BestJobs.ro</a> <a href="/imaginijob/purolite.jpeg">Anunţ</a></li>
-    Oportunităţi la unul dintre cei mai doriţi angajatori, <a href="https://careers.smartrecruiters.com/BoschGroup/romania">Bosch</a>
+    <li>Oportunităţi la unul dintre cei mai doriţi angajatori, <a href="https://careers.smartrecruiters.com/BoschGroup/romania">Bosch</a></li>
     <li><a href="https://careers.ro.mdpi.com/">MDPI </a>angajează asistenţi de editori (Cluj şi Bucureşti) pentru a publica articole ştiinţifice şi pentru a găzdui Special Issues.</li>
     <li>Universal Alloy Corporation (UAC) – Piese din aluminiu pentru aeronave <a href="https://www.universalalloy.com/UAC-Employment-Opportunities.html">Site-ul angajatorului</a> <a href="https://www.ejobs.ro/company/Universal-Alloy-Corporation-Europe/183460">Compania pe ejobs.ro</a></li>
     <li>OMV – petrochimie şi nu numai <a href="https://www.omvpetrom.com/ro/jobs/joburi-disponibile">Posturi disponibile</a> <a href="https://www.omvpetrom.com/ro/jobs/tineri-talenta-i">Programe pt. tineri</a> <a href="/imaginijob/omv.jpeg">LNG Operator</a></li>
     <li><a href="https://www.heidelbergcement.ro/ro/cariere">HeidelbergCement</a> Construieşte-ţi cariera pe baze solide!</li>
     <li><a href="http://www.cesiro.com/pages/oferte.php">Cesiro</a> Cel mai mare producător de ceramice de uz casnic (conform site-ului companiei)</li>
     <li><a href="https://teracrystal.com/career/">TeraCrystal</a> Dincolo de cristal – Research Assistant Junior Scientist <a href="/imaginijob/teracrystal-research-assistant-junior-scientist.pdf">Anunţ</a></li>
+    <li>Poliţia locală Lugoj angajează absolvenţi în domeniu <a href="imaginijob/politielugoj-compart-mediu.jpeg">Anunţ</a></li>
+    * mai multe detalii în <a href="https://www.facebook.com/primariaLugoj/photos/a.1006754946196984/1637486809790458/">anunţul de pe Facebook</a>
 </ul>
-<br><em>Arhivă posturi.</em> Chiar dacă au expirat, un e-mail în care să te adresezi politicos nu poate face rău.<hr>
+<h1 id="C2">Arhivă posturi. <em>Chiar dacă au expirat, un e-mail în care să te adresezi politicos nu poate face rău.</em></h1>
 
 <ul>
     <li><a href="https://www.wabag.com/careers/">WABAG</a> – Laborator Suplacu de Barcău. Prelevare probe & analize de calitate. <a href="/imaginijob/wabagcontrolcalitate.jpg">Anunţ</a></li>
@@ -57,7 +72,7 @@
     <li>Inginer chimist sau tehnolog pentru o companie care realizează produse din cauciuc <a href="/imaginijob/cauciuc-ing-ch-tehnolog.pdf">Anunţ</a></li>
     <li>Institutul Naţional de Cercetare-Dezvoltare pentru Tehnologii Izotopice şi Moleculare I.N.C.D.T.I.M. Cluj-Napoca <a href="http://ro.itim-cj.ro/cariera/">Cariere</a></li>
     <li><a href="https://www.raal.ro/">RAAL</a> Soluţii complete de răcire <a href="/imaginijob/raal-inginer-chimist.pdf">Anunţ</a></li>
-    <li><a href="https://www.basf.com/ro/ro/careers.html">BASF</a> Chimie pentru un viitor durabil <a href="/imaginijob/basf-technical-advisor-pm..pdf">Anunţ Technical Advisor</a></li>
+    <li><a href="https://www.basf.com/ro/ro/careers.html">BASF</a> Chimie pentru un viitor durabil <a href="/imaginijob/basf-technical-advisor-pm.pdf">Anunţ Technical Advisor</a></li>
     <li>Chimist într-un laborator de analiza calităţii apei, Cluj <a href="/imaginijob/chimist-laboratorcalitateaapeicluj.pdf">Anunţ</a></li>
     <li>Teraplast oferă <a href="https://www.teraplast.ro/cariera/">următoarele cariere</a> <a href="/imaginijob/teraplast-inginer-cercetare.pdf">Anunţ</a></li>
     <li>S.C. Wildoak – vopsele şi lacuri – (site nefuncţional), iar termene.ro nu rapoartează date financiare mai recente de 2019 <a href="/imaginijob/wildoak-vopsele.jpg">Anunţ</a></li>
@@ -65,5 +80,6 @@
 
 <q>1</q><a href="https://www.zf.ro/companii/chimcomplex-borzesti-vinde-189-de-milioane-de-actiuni-la-un-pret-19918624"> Referinţa 1</a><br>
 <q>2</q> <a href="">Ref. 2</a> 
+
 </body>
 </html>
