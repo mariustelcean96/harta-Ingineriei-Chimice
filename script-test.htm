@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ro-RO">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="CSS/mystyle.css">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td><a href="index.html">Acasă</a></td>  
+            </tr>
+        </table>
+            <script>
+                window.alert("Mesaj pentru Marius: Te rog frumos să continui cu renovarea bucătăriei. Ai destule chestii pe care le poţi face şi fără să mai faci în camera a treia.");
+            </script>
+            <p id="demo6">– Scripturile? <br>– Da. Ce e cu ele?</p>
+            <button type="button" onclick="Funcţiamea()">Răspuns scripturi</button>
+            <script>
+    // Functiamea, scrisa în JS, va schimba elementul demo6 cu motivul pt. care scripturile se așază la finalul paginilor web.
+            function Funcţiamea() {
+                document.getElementById("demo6").innerHTML = "Pentru optimizarea vitezei de încărcăre a paginii, scripturile se aşază cât mai jos în elementul body.";
+            }
+            </script>
+            <p id="demo7" class="titluriprinc">Ai ajuns până aici. E destul. Te poţi opri acum.</p>
+            <button type="button" onclick="FuncţiaDeAur()">Apasă aici dacă ultimele 3 propoziţii nu te susţin.</button><br>
+            
+        <script src="js/script.js"></script>
+    </body>
+</html>

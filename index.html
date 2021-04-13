@@ -3,25 +3,25 @@
 <head>
     <meta charset="utf-8">
     <title>Hai la facultate - Transparentizăm învăţământul superior din România</title>
-<!--Elementele de stilizare CSS se vor regăsi exclusiv într-un fișier .css separat.*/--> 
-<link rel="stylesheet" type="text/css" href="CSS/mystyle.css">
-<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
-<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+        <!--Elementele de stilizare CSS se vor regăsi exclusiv într-un fișier .css separat.*/--> 
+    <link rel="stylesheet" type="text/css" href="CSS/mystyle.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body>
 <!-- Site-ul va conține în cele din urmă toate informațiile esențiale de care are nevoie un viitor student pentru a găsi facultatea dorită.-->
 <table>
     <tr>
-        <td><a href="agregatorjoburi.htm" style="font-size:large;">Locuri de muncă</a></td>
+        <td><a href="agregatorjoburi.htm">Locuri de muncă</a></td>
+        <td><a href="campus-ubb-cluj.htm">Campusul UBB Cluj-Napoca</a></td>
         <td><a href="facultateX.htm">FCIC Cluj-Napoca</a></td>
         <td><a href="despresite.htm">Ideea site-ului</a></td>
+        <td><a href="script-test.htm">Script test page</a></td>
     </tr>
 </table>
 <h1>Test</h1>    
 <h2 style="margin: 15px; padding: 15px; border: 1px solid Black;background-color: hsl(30, 100%, 85%);">#FăRaiDinCeAi</h2>
-<script>
-window.alert("Mesaj pentru Marius: Te rog frumos să continui cu renovarea bucătăriei. Ai destule chestii pe care le poţi face şi fără să mai faci în camera a treia.");
-</script>
+
     <p id="demo1">Voi duce sau nu voi duce acest proiect la bun sfârşit?</p>
     <button type="button" onclick='document.getElementById("demo1").innerHTML = "Eu zic că da."'>Răspuns</button>
 
@@ -43,25 +43,14 @@ window.alert("Mesaj pentru Marius: Te rog frumos să continui cu renovarea bucă
 <p class="titluriprinc" title="Îmi place să pun metadata de genul acesta.">Urmează o prezentare cu diaporame care se derulează singure şi în care sunt redate impresiile celor care au folosit site-ul.</p>
 <p class="textdeinlocuit" title="Ok, gata. Am învăţat sintaxa.">Recenzia1, Recenzia2, şamd.</p>
 
-<img id="demo5" src="campusHd.jpg" alt="Ce rămâne după studenţi" style="width:250px" hidden="true"><br>
-<button type="button" onclick="document.getElementById('demo5').style.display='block'">Frigidere vechi, abandonate în campus ajung la gunoi.</button>
+
 <p>Atunci când apeşi pe una din legăturile de mai jos, culoarea fontului lor se schimbă din roşu în mov.</p>
 
-<button type="button"
+        <button type="button"
     onclick="document.getElementById('demo').innerHTML = Date()">Apasă aici pentru a vedea data şi ora exactă.</button>
-    <p id="demo"></p>
-    <p id="demo6">– Scripturile? <br>– Da. Ce e cu ele?</p>
-    <button type="button" onclick="Funcţiamea()">Răspuns scripturi</button>
-    <script>
-// Functiamea, scrisa în JS, va schimba elementul demo6 cu motivul pt. care scripturile se așază la finalul paginilor web.
-        function Funcţiamea() {
-            document.getElementById("demo6").innerHTML = "Pentru optimizarea vitezei de încărcăre a paginii, scripturile se aşază cât mai jos în elementul body.";
-        }
-    </script>
+<p id="demo"></p>
 
-<p id="demo7" class="titluriprinc">Ai ajuns până aici. E destul. Te poţi opri acum.</p>
-    <button type="button" onclick="FuncţiaDeAur()">Apasă aici dacă ultimele 3 propoziţii nu te susţin.</button><br>
-    <button id="b1">Schimbă utilizatorul</button>
+<button id="b1">Schimbă utilizatorul</button>
 <script src="js/script.js"></script>
 <small><p>Site creat în timpul liber. Pentru realizarea sa s-au folosit resurse de pe <em>theodinproject.com</em> şi <em>w3schools.com</em>.</p></small>
 </body>
