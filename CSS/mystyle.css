@@ -1,18 +1,44 @@
 html {
-    background-color:beige;
+    background:beige;
     }
+
+#navbar {
+position: fixed;
+top: 0px;
+left: 0px;
+width: 15%;
+height: 100%;
+background: linear-gradient(145deg, hsl(60, 15%, 45%), hsl(60, 20%, 90%));
+    }
+
+  nav ul {
+margin: 28px;
+padding: 5px 5px 5px 5px;
+text-align: center;
+font-size: .9em;
+  }  
+
+  nav li {
+     display: inline-block;     
+  }
+
+  #right {
+    float: right;
+    width:10%
+    }
+
 body {
-   background-color: beige;
+   background: beige;
    display:block;
    margin:80px;
-   font-family: courier;
-   width: 900px;
+   font-family: courier, serif;
+   width: 800px;
    margin: 0 auto;
    padding: 20px 20px 20px 20px;
-   border: 5px solid rgb(219, 219, 197);
-   }
+   
+}
 a:link, a:visited {
-    background-color:#314e8f; 
+    background:#3c558b; 
     padding: 10px 10px;
     color: white; 
     display: inline-block;
@@ -21,7 +47,7 @@ a:link, a:visited {
     text-align: center;
 }
 a:hover, a:active {
-        background-color: rgb(13, 11, 131);
+        background-color: rgb(37, 36, 133);
 }    
 h1 {
     color: rgb(12, 60, 61);
@@ -29,31 +55,52 @@ h1 {
     text-align: center;
     padding: 20px 0;
     margin: 20px;
-    line-height: 1;
+    line-height: 25px;
     letter-spacing: 2px;
-    text-shadow: 1px 1px 1px grey;
     border-radius: 5px;
     }
 h2 {
     color:teal;
-    text-shadow: 3px 3px 2px grey;
-    text-align:center;
+    text-shadow: 1.5px 1.5px 1.5px rgb(169, 179, 174);
+    text-align: center;
     border-radius: 5px;
+    display: block;
+    margin: auto;
+    width: 400px;
+    padding: 0px;
+    border: 1px solid Black;
+    background-color: hsl(30, 100%, 85%);
     }
 p {
     font-family: courier;
     font-size: 19px;
-    text-align: justify;
+    text-align: center;
     color:CadetBlue;
     padding: 20px;
     letter-spacing: 2px;
     }
-.titluriprinc {color:teal; text-align:center; font-size:24px; background-color:white;}
-.textdeinlocuit {color:grey; text-align:center;}
+.titluriprinc {
+    color:teal; 
+    text-align:center; 
+    font-size:24px; 
+    background:white;
+    opacity: 0.5;
+}
+
+.textdeinlocuit {
+    color:grey; 
+    text-align:center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border: 1px solid gray;
+}
 
 table{
     margin: 0px auto;
     border: 0px;
+}
+td {
+    margin: 0 auto;
+    text-align: center;
 }
 address {
 color:DimGrey;
@@ -91,4 +138,25 @@ li {
 #mapid {
     height: 100px;
     
+}
+[type='button'] {
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin: 0 auto;
+    display: block;
+    font-size: 1em;
+    background: #FF790E;
+}
+
+[type='submit'] {
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    margin: 0 auto;
+    display: block;
+    font-size: 1em;
+}
+
+footer {
+    text-align: center;
+    opacity: 0.5;
 }

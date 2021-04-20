@@ -7,27 +7,28 @@
         <link rel="stylesheet" type ="text/css" href="CSS/mystyle.css">
     </head>
 <body>
-    <table>
-        <tr>
-            <td>
-                <a href="index.html">Acasă</a>
-            </td>
-            <td>
-                <a href="agregatorjoburi.htm">Listă cu ofertele de muncă</a>
-            </td>
-        </tr>
-    </table>
-    
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="agregatorjoburi.htm">Listă cu ofertele de muncă</a></li>
+            </ul>
+        </nav>
+    </header>
     
     <p class="titluriprinc">Prob. că aici va apărea un desfăşurător cu recenzii ale studenţilor/profesorilor.</p>
     <p>Exemplu <strong>nefericit</strong> şi totodată o consecinţă nefastă a modernizării: ansamblul de clădiri care găzduieşte facultatea este vechi şi va fi renovat în următorii ani. Pentru a elibera spaţiu s-a recurs la soluţii de compromis.</p>
-<figure>
-    <img title="O parte din colecţia de cărţi vechi, pe cale de a ajunge la container." alt="Cărţi aruncate la grămadă pe pământul din curtea facultăţii" src="fundal.jpg">
+
+        <figure>
+    <img id="cartiaruncate" title="O parte din colecţia de cărţi vechi, pe cale de a ajunge la container." alt="Cărţi aruncate la grămadă pe pământul din curtea facultăţii" src="fundal.jpg">
     <figcaption>Cărţi vechi, aruncate de la unul din cele două etaje ale facultăţii.</figcaption>
-</figure>
-    <p id="demo2">Mai multe detalii despre motivul pentru care cărţile acelea au fost aruncate de la etaj</p>
+        </figure>
+    
+<p id="demo2">Mai multe detalii despre motivul pentru care cărţile acelea au fost aruncate de la etaj</p>
 <button type="button" onclick="document.getElementById('demo2').innerHTML ='Facultatea a intrat în renovare în acel an. S-au făcut schimbări în organigrama sălilor. Noua sală de lectură era parţial ocupată de cărţi.'">Apasă aici pentru detalii</button>
-<button onclick="document.getElementById('cartiaruncate').src ='dislike.jpg'">Unii studenţi şi-au manifestat nemulţumirea</button>
+
+<button type="button" onclick="document.getElementById('cartiaruncate').src ='dislike.jpg'">Unii studenţi şi-au manifestat nemulţumirea</button>
+
 <p class="titluriprinc">Din păcate, în ciuda eforturilor depuse de studenţi şi de profesori, multe din instalaţiile din laboratoare sunt destul de vechi.</p>
 <figure>
 <img src="instalatieuscare.jpg" alt="Instalaţie de uscare foarte veche"><br>
@@ -37,6 +38,6 @@
 <button type="button" onclick="document.getElementById('demo3').style.fontSize='35px'">Buton/Script care scoate în evidenţa un element.</button><br>
 <p id="demo4">Pentru a ascunde un element HTML se poate folosi un buton precum cel de mai jos:</p>
 <button type="button" onclick="document.getElementById('demo4').style.display='none'">Buton (script) pentru a ascunde un element HTML.</button><br><br>
-<a href="https://www.chem.ubbcluj.ro">Site-ul facultăţii de chimie din Cluj-Napoca</a><br>
+<a style="position: relative; margin: 0 auto; display: block;"href="https://www.chem.ubbcluj.ro">Site-ul facultăţii de chimie din Cluj-Napoca</a><br>
 </body>
 </html>

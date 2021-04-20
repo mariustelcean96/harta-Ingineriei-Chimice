@@ -10,18 +10,19 @@
 </head>
 <body>
 <!-- Site-ul va conține în cele din urmă toate informațiile esențiale de care are nevoie un viitor student pentru a găsi facultatea dorită.-->
-<table>
-    <tr>
-        <td><a href="agregatorjoburi.htm">Locuri de muncă</a></td>
-        <td><a href="campus-ubb-cluj.htm">Campusul UBB Cluj-Napoca</a></td>
-        <td><a href="facultateX.htm">FCIC Cluj-Napoca</a></td>
-        <td><a href="despresite.htm">Ideea site-ului</a></td>
-        <td><a href="script-test.htm">Script test page</a></td>
-    </tr>
-</table>
+<header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="agregatorjoburi.htm">Locuri de muncă</a></li>
+            <li><a href="campus-ubb-cluj.htm">Campusul UBB Cluj-Napoca</a></li>
+            <li><a href="facultateX.htm">FCIC Cluj-Napoca</a></li>
+            <li><a href="despresite.htm">Ideea site-ului</a></li>
+            <li><a href="script-test.htm">Script test page</a></li>
+        </ul>
+    </nav>
+</header>
+<h2>#FăRaiDinCeAi</h2>
 <h1>Test</h1>    
-<h2 style="margin: 15px; padding: 15px; border: 1px solid Black;background-color: hsl(30, 100%, 85%);">#FăRaiDinCeAi</h2>
-
     <p id="demo1">Voi duce sau nu voi duce acest proiect la bun sfârşit?</p>
     <button type="button" onclick='document.getElementById("demo1").innerHTML = "Eu zic că da."'>Răspuns</button>
 
@@ -30,7 +31,7 @@
 <p title="Sper">Fii parte din soluţie, nu din problemă.</p>
 
 <p class="titluriprinc" title="Sigur vom reuşi.">Sub, voi insera hărţi Google/alternativă gratuită pentru a se putea găsi orice facultate din ţară.</p>
-<div id='map' style='width: 800px; height: 600px; margin: 0 auto;'></div>
+<div id='map' style='width: 650px; height: 400px; margin: 0 auto;'></div>
 <script>
   mapboxgl.accessToken = 'pk.eyJ1IjoibWFyaXVzdGVsY2VhbiIsImEiOiJja25lOGJjdTgxcDRoMnBtdTQzMjFyanhjIn0.RO6ggGYC5XY6-21ZNwtlwA';
   var map = new mapboxgl.Map({
@@ -43,15 +44,13 @@
 <p class="titluriprinc" title="Îmi place să pun metadata de genul acesta.">Urmează o prezentare cu diaporame care se derulează singure şi în care sunt redate impresiile celor care au folosit site-ul.</p>
 <p class="textdeinlocuit" title="Ok, gata. Am învăţat sintaxa.">Recenzia1, Recenzia2, şamd.</p>
 
-
-<p>Atunci când apeşi pe una din legăturile de mai jos, culoarea fontului lor se schimbă din roşu în mov.</p>
-
         <button type="button"
     onclick="document.getElementById('demo').innerHTML = Date()">Apasă aici pentru a vedea data şi ora exactă.</button>
 <p id="demo"></p>
 
-<button id="b1">Schimbă utilizatorul</button>
+<button id="b1" type="button">Schimbă utilizatorul</button>
 <script src="js/script.js"></script>
 <small><p>Site creat în timpul liber. Pentru realizarea sa s-au folosit resurse de pe <em>theodinproject.com</em> şi <em>w3schools.com</em>.</p></small>
+<footer>&copy; 2021 Hai la facultate!</footer>
 </body>
 </html>

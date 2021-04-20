@@ -2,25 +2,24 @@
 <html lang="ro-RO">
     <head>
         <meta charset="utf-8">
-        <title>Agregator de joburi pentru ingineri chimişti</title>
+            <title>Agregator de joburi pentru ingineri chimişti</title>
         <!--Elementele de stilizare se găsesc în fişierul mystyle.css din dosarul CSS.-->
-<link rel="stylesheet" title="text/css" href="CSS/mystyle.css">
-<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
-<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
-
+            <link rel="stylesheet" title="text/css" href="CSS/mystyle.css">
+            <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+            <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
     </head>
     <body>
-        <table>
-            <tr>
-                <td><a href="index.html" title="Home">Acasă</a></td>
-                <td><a href="#C1" title="Current Job Offers">Oportunităţi disponibile</a></td>
-                <td><a href="#C2" title="Jobs Archive">Arhivă de oferte</a></td>
-            </tr>
-        </table>
-        
-        <p class="titluriprinc">Mi-ar plăcea să inserez o hartă Google cu toate companiile evidenţiate.</h1>
-        
-<div id='map' style='width: 800px; height: 600px; margin: 0 auto;'></div>
+        <header>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html" title="Home">Acasă</a></li>
+                    <li><a href="#C1" title="Current Job Offers">Oportunităţi disponibile</a></li>
+                    <li><a href="#C2" title="Jobs Archive">Arhivă de oferte</a></li>
+                </ul>
+            </nav>
+        </header>  
+            <p class="titluriprinc">Mi-ar plăcea să inserez o hartă Google cu toate companiile evidenţiate.</h1>   
+            <div id='map' style='width: 650px; height: 400px; margin: 0 auto;'></div>
 <script>
   mapboxgl.accessToken = 'pk.eyJ1IjoibWFyaXVzdGVsY2VhbiIsImEiOiJja25lOGJjdTgxcDRoMnBtdTQzMjFyanhjIn0.RO6ggGYC5XY6-21ZNwtlwA';
   var map = new mapboxgl.Map({
@@ -50,6 +49,9 @@
     <li><a href="https://teracrystal.com/career/">TeraCrystal</a> Dincolo de cristal – Research Assistant Junior Scientist <a href="/imaginijob/teracrystal-research-assistant-junior-scientist.pdf">Anunţ</a></li>
     <li>Poliţia locală Lugoj angajează absolvenţi în domeniu <a href="imaginijob/politielugoj-compart-mediu.jpeg">Anunţ</a></li>
     * mai multe detalii în <a href="https://www.facebook.com/primariaLugoj/photos/a.1006754946196984/1637486809790458/">anunţul de pe Facebook</a>
+    <li>MIDMET – aşii protecţiei anticorozive. <a href="https://www.bestjobs.eu/ro/loc-de-munca/inginer-chimist-100">Post ing. chimist</a><a href="https://www.bestjobs.eu/ro/firme/sc-midmet-srl">Cariere</a></li>
+    <li>Vernicolor angajează <a href="https://www.bestjobs.eu/ro/loc-de-munca/inginer-chimist-laborator-5">inginer chimist pt. laborator</a>. Compania pe <a href="https://www.bestjobs.eu/ro/firme/sc-vernicolor-srl">BestJobs.ro</a>.</li>
+    <li><a href="https://www.bestjobs.eu/ro/loc-de-munca/controlor-calitate-laborator-chimic">Controlor de calitate</a> în laborator pentru B|Braun.</li>
 </ul>
 <h1 id="C2">Arhivă posturi. <em>Chiar dacă au expirat, un e-mail în care să te adresezi politicos nu poate face rău.</em></h1>
 

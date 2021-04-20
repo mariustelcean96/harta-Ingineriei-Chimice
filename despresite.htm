@@ -6,15 +6,9 @@
     <style> 
       body {
       background-color: beige;
-      background-image: url("student-writing.jpg");
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      background-position: right top;
-      background-size: cover;
-      margin-right: 200px;
       font-family: Courier;
       font-size: large;
-      width:700px;
+      width:800px;
       margin: 0 auto;
       }
       a:link, a:visited {
@@ -42,6 +36,7 @@
         color:black;
         background-color: lightgrey;
         border-radius: 10px;
+        margin: 50px 50px;
       }
       p {
         border-left: 5px solid cornflowerblue;
@@ -49,18 +44,75 @@
         background-color:lightgrey;
         border-radius: 5px;
       }
+      [type='radio'] {
+    margin: 10px 0px 10px 0px;
+}
+[type='checkbox'] {
+    margin: 0px 20px 20px 20px;
+}
+[type='text'] {
+  margin: 0px 20px 20px 20px;
+}
+[type='submit']{
+  margin: 0px 20px 20px 20px;
+  padding: 0.5em;
+}
+
+[type='search'] {
+  padding: 0.5em;
+}
+section {
+  position: relative;
+}
+
+#searchbar {
+  position: absolute;
+  top: 90px;
+  right: 50px;
+}
+
+#navbar {
+width: 15%;
+position: fixed;
+top: 0px;
+left: 0px;
+background: rgba(0,0,0,0.19);
+}
+
+#nav ul {
+margin: 0px;
+padding: 0.9em;
+}
+
+nav li {
+  display: inline-block;
+}
+
+aside {
+  background: #ccc;
+}
     </style>
   </head>
   <body>
-<table>
-  <tr>
-   <td><a href="index.html">Acasă</a></td> 
-   <td><a href="agregatorjoburi.htm">Joburi</a></td>
-  </tr>
-</table>
+    <header>
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html">Acasă</a></li>
+          <li><a href="agregatorjoburi.htm">Joburi</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <form id="searchbar">
+        <label for="search">Caută:</label>
+        <input id="search" type="search" name="search">
+        <input type="submit" id="submit" value="Enter!">
+      </form>
+    </section>
+
     <h1>Acest site a fost realizat din dorinţa de a...</h1>
-    <p style="">Date despre ...</p>
-<ol>
+<div><p style="">Date despre ...</p>
+  <ol>
     <li>Facilitarea accesului celor interesaţi la informaţii despre mediul universitar din ţară</li>
     <li>Facilitarea accesului celor interesaţi la informaţii despre mediul universitar din ţară</li>
     <li>Facilitarea accesului celor interesaţi la informaţii despre mediul universitar din ţară</li>
@@ -73,6 +125,30 @@
     <li>Facilitarea accesului celor interesaţi la informaţii despre mediul universitar din ţară</li>
     <li>Facilitarea accesului celor interesaţi la informaţii despre mediul universitar din ţară</li>
   </ol>
+</div>
+  <form action="https://github.com/mariustelcean96/Vreau-la-facultate/blob/main/date-formulare.txt">
+    <p>Putem publica părerea dvs. pe site?</p>
+    <label for="Da">Da</label>  
+    <input id="Da" type="radio" name="acord-publicare-recenzie">  
+    <label for="Nu">Nu</label>
+    <input id="Nu" type="radio" name="acord-publicare-recenzie">
+    <p>Sunteţi de accord cu regulile de utilizare a site-ului?</p>
+    <label for="Da">Da</label>
+      <input type="radio" id="Da" name="acord-reguli-site">
+     <label for="Nu">Nu</label>
+     <input type="radio" id="Nu" name="acord-reguli-site">
+    </label>
+    <p>Cum vă putem contacta dacă dorim detalii de la dvs.?</p>
+    <label for="e-mail">E-mail</label>
+    <input type="checkbox" id="e-mail" name="modalităţi-contact" value="e-mail" checked>
+    <label for="phone-number">La telefon</label>
+    <input type="checkbox" id="phone-number" name="modalităţi-contact" value="phone-number"><br>
+    <input type="text" required placeholder="Nume şi prenume">
+    <input type="text" required placeholder="E-mail">
+    <input type="text" required placeholder="Număr de telefon">
+    <input type="text" placeholder="Aa..."><br>
+    <button type="submit">Trimite</button>
+  </form>
   
   <address style="background-color:white;">
     Site realizat de: <a href="mailto:marius.telcean96@gmail.com">Marius Telcean</a><br>
