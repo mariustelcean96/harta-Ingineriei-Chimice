@@ -29,9 +29,9 @@ font-size: .9em;
 
 body {
    background: beige;
-   display:block;
-   margin:80px;
-   font-family: courier, serif;
+   display: block;
+   margin: 80px;
+   font-family: monospace, serif;
    width: 800px;
    margin: 0 auto;
    padding: 20px 20px 20px 20px;
@@ -48,6 +48,8 @@ a:link, a:visited {
 }
 a:hover, a:active {
         background-color: rgb(37, 36, 133);
+        transform: scale(1.1);
+        border-radius: 2px;
 }    
 h1 {
     color: rgb(12, 60, 61);
@@ -59,6 +61,7 @@ h1 {
     letter-spacing: 2px;
     border-radius: 5px;
     }
+
 h2 {
     color:teal;
     text-shadow: 1.5px 1.5px 1.5px rgb(169, 179, 174);
@@ -70,6 +73,13 @@ h2 {
     padding: 0px;
     border: 1px solid Black;
     background-color: hsl(30, 100%, 85%);
+    }
+
+    h3 {
+        text-align: center;
+        color: red;
+        font-size: larger;
+        letter-spacing: 1px;
     }
 p {
     font-family: courier;

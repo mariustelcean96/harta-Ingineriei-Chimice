@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ro-RO">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="/CSS/mystyle.css">
+        <title>Pagina de test CSS</title>
+        <style>
+        #replingrad {
+            border-radius: 20px;
+            margin: 500px auto;
+            width: 300px;
+            height:300px;
+            text-align: center;
+            background: repeating-linear-gradient(
+                45deg,
+                rgb(133, 133, 211) 0px,
+                rgb(114, 114, 209) 40px
+            );
+        }
+        #avertizare {
+            border-radius: 0;
+            margin: 100 auto;
+            width: 100%x;
+            height: 10px;
+            background: repeating-linear-gradient(
+            45deg,
+            yellow 0px,
+            yellow 40px,
+            black 40px,
+            black 80px
+            );
+        }
+
+        #anim {
+            animation-name: colorful;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes colorful {
+            0% {
+                background:red;
+            }
+            10% {
+                background:orange;
+            }
+            20% {
+                background:yellow;
+            }
+            30% {
+                background: green;
+            }
+            60% {
+                background: blue;
+            }
+            80% {
+                background:indigo;
+            }
+            100% {
+                background: violet;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html">Acasă</a></li>
+                </ul>
+            </nav>
+        </header>
+        <p>Câteva exemple cu repeating linear gradient:</p>
+    <div id="anim">
+        <div id="avertizare"></div>
+        <h3>Te rog frumos să treci în bucatărie şi să continui cu renovarea.</h3>
+        <div id="avertizare"></div>
+    </div>
+        <div id="replingrad">Acesta este un element div.</div> 
+    </body>
+</html>

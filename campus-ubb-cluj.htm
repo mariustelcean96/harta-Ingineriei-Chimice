@@ -5,6 +5,29 @@
         <title>Campusul universitar Babeş-Bolyai din Cluj-Napoca</title>
         <link rel="stylesheet" type="text/css" href="CSS/mystyle.css">
     </head>
+    <style>
+        img {
+            width:250px;
+            margin: 10px 10px;
+        }
+
+        img:hover {
+            /*transform: scale(1.5);*/
+            animation-name: img-expansion;
+            animation-duration: .5s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes img-expansion {
+            100% {
+                width: 100%;
+            }
+        }
+        #pozecampus {
+            margin: 50px 50px;
+            padding: 10px 10px;
+        }
+    </style>
     <body>
         <header>
         <nav id="navbar">
@@ -15,7 +38,9 @@
             </ul>
         </nav>
         </header>
-        <img id="demo5" src="campusHd.jpg" alt="Ce rămâne după studenţi" style="width:250px" hidden="true"><br>
-        <button type="button" onclick="document.getElementById('demo5').style.display='block'">Frigidere vechi, abandonate în campus ajung la gunoi.</button>
+        <div id="pozecampus">
+            <img id="demo5" src="campusHd.jpg" alt="Ce rămâne după studenţi" hidden="true"><br>
+            <button type="button" onclick="document.getElementById('demo5').style.display='block'">Frigidere vechi, abandonate în campus ajung la gunoi.</button>
+        </div>
     </body>
 </html>
