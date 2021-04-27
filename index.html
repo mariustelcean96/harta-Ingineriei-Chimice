@@ -21,37 +21,39 @@
             <li><a href="test-css.htm">Pagina de teste CSS</a></li>
         </ul>
     </nav>
+    <h1>Ajută-ne să facem învăţământul universitar mai transparent.</h1>
 </header>
-<h2>#FăRaiDinCeAi</h2>
-<h1>Test</h1>    
-    <p id="demo1">Voi duce sau nu voi duce acest proiect la bun sfârşit?</p>
-    <button type="button" onclick='document.getElementById("demo1").innerHTML = "Eu zic că da."'>Răspuns</button>
-
-<h1 style="background-color:teal;">Ajută-ne să facem învăţământul universitar mai transparent.</h1>
-<p class="titluriprinc" title="Vom reuşi împreună!"><b>Recenzia ta poate schimba mentalităţi.</b></p>
-<p title="Sper">Fii parte din soluţie, nu din problemă.</p>
-
-<p class="titluriprinc" title="Sigur vom reuşi.">Sub, voi insera hărţi Google/alternativă gratuită pentru a se putea găsi orice facultate din ţară.</p>
-<div id='map' style='width: 650px; height: 400px; margin: 0 auto;'></div>
-<script>
+<main>
+        <p class="titluriprinc">Alege să fii informat. Îţi vei fi recunoscător mai târziu.</p>
+            <h2>Hartă interactivă cu toate universităţile din ţara noastră.</h2>
+            <!--Hartă-->
+                <div id='map' style='width: 350px; height: 350px; margin: 0 auto;'></div>
+                    <script>
   mapboxgl.accessToken = 'pk.eyJ1IjoibWFyaXVzdGVsY2VhbiIsImEiOiJja25lOGJjdTgxcDRoMnBtdTQzMjFyanhjIn0.RO6ggGYC5XY6-21ZNwtlwA';
   var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v11'
   });
-</script>
-<p class="titluriprinc" title="Doar că trebuie muultă muncă.">Apoi aş vrea să inserez un desfăşurător pe judeţe, localităţi, facultăţi. Rezultatele afişate să poată fi filtrate în funcţie de universitate, facultate, profil, notă VLF.</p>
-<p class="textdeinlocuit" title="temporar">(Desfăşurător cu interogări din baze de date.)</p>
-<p class="titluriprinc" title="Îmi place să pun metadata de genul acesta.">Urmează o prezentare cu diaporame care se derulează singure şi în care sunt redate impresiile celor care au folosit site-ul.</p>
-<p class="textdeinlocuit" title="Ok, gata. Am învăţat sintaxa.">Recenzia1, Recenzia2, şamd.</p>
-
-        <button type="button"
-    onclick="document.getElementById('demo').innerHTML = Date()">Apasă aici pentru a vedea data şi ora exactă.</button>
-<p id="demo"></p>
-
-<button id="b1" type="button">Schimbă utilizatorul</button>
-<script src="js/script.js"></script>
-<small><p>Site creat în timpul liber. Pentru realizarea sa s-au folosit resurse de pe <em>theodinproject.com</em> şi <em>w3schools.com</em>.</p></small>
-<footer>&copy; 2021 Hai la facultate!</footer>
+                    </script>
+        <p class="titluriprinc" title="Sigur vom reuşi.">Fiecare facultate a fiecărei universităţi va avea câte o pagină proprie. </p>
+            <h2>Ce ne-a motivat să concepem aceste site şi de ce ar trebui să fii informat cu privire la facultatea pe care vrei să o urmezi?</h2>
+        <p class="titluriprinc"><em>Motivaţie!...</em></p>
+        <p class="titluriprinc" title="Doar că trebuie muultă muncă.">Apoi aş vrea să inserez un desfăşurător pe judeţe, localităţi, facultăţi. Rezultatele afişate să poată fi filtrate în funcţie de universitate, facultate, profil, notă VLF.</p>
+        <p class="textdeinlocuit" title="temporar">(Desfăşurător cu interogări din baze de date.)</p>
+        <p class="titluriprinc" title="Îmi place să pun metadata de genul acesta.">Urmează o prezentare cu diaporame care se derulează singure şi în care sunt redate impresiile celor care au folosit site-ul.</p>
+        <p class="textdeinlocuit" title="Ok, gata. Am învăţat sintaxa.">Recenzia1, Recenzia2, şamd.</p>
+            <article>text1</article>
+            <article>text2</article>
+            <article>etc.</article>
+                <button type="button"
+                onclick="document.getElementById('demo').innerHTML = Date()">Apasă aici pentru a vedea data şi ora exactă.</button>
+                <p id="demo"></p>
+            <h5>Test</h5> 
+<!--<button id="b1" type="button">Schimbă utilizatorul</button>
+<script src="js/script.js"></script>-->
+<small><p>Site creat în timpul liber. Pentru realizarea sa s-au folosit resurse de pe <em>theodinproject.com</em> şi <em>w3schools.com</em>.</p></small><br>
+</main>
+<footer>
+    &copy; 2021 Hai la facultate!</footer>
 </body>
 </html>

@@ -1,3 +1,10 @@
+.sr-only {
+position: absolute;
+left: -10000px;
+width: 1px;
+height: 1px;
+}
+
 html {
     background:beige;
     }
@@ -30,11 +37,10 @@ font-size: .9em;
 body {
    background: beige;
    display: block;
-   margin: 80px;
    font-family: monospace, serif;
-   width: 800px;
    margin: 0 auto;
    padding: 20px 20px 20px 20px;
+    width: 800px;
    
 }
 a:link, a:visited {
@@ -50,10 +56,11 @@ a:hover, a:active {
         background-color: rgb(37, 36, 133);
         transform: scale(1.1);
         border-radius: 2px;
+        
 }    
 h1 {
-    color: rgb(12, 60, 61);
-    font-size:medium;
+    color: rgb(14, 153, 153);
+    font-size:1em;
     text-align: center;
     padding: 20px 0;
     margin: 20px;
@@ -63,16 +70,14 @@ h1 {
     }
 
 h2 {
-    color:teal;
-    text-shadow: 1.5px 1.5px 1.5px rgb(169, 179, 174);
+    color:rgb(14, 153, 153);
+    font-size: .8em;
     text-align: center;
     border-radius: 5px;
     display: block;
-    margin: auto;
-    width: 400px;
-    padding: 0px;
-    border: 1px solid Black;
-    background-color: hsl(30, 100%, 85%);
+    margin: 10px auto;
+    width: 50%;
+    padding: 10px;
     }
 
     h3 {
@@ -80,9 +85,9 @@ h2 {
         color: red;
         font-size: larger;
         letter-spacing: 1px;
+        text-shadow: 1.5px 1.5px 1.5px rgb(169, 179, 174);
     }
 p {
-    font-family: courier;
     font-size: 19px;
     text-align: center;
     color:CadetBlue;
@@ -90,11 +95,13 @@ p {
     letter-spacing: 2px;
     }
 .titluriprinc {
-    color:teal; 
+    color:rgb(9, 22, 22); 
     text-align:center; 
-    font-size:24px; 
-    background:white;
-    opacity: 0.5;
+    font-size:.7em; 
+    background:rgb(156, 187, 187);
+    margin: 10px auto;
+    width: 70%;
+    border-radius: 5px;
 }
 
 .textdeinlocuit {
@@ -102,8 +109,15 @@ p {
     text-align:center;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border: 1px solid gray;
+    width: 70%;
+    margin: 10px auto;
+    border-radius: 5px;
 }
 
+article {
+    margin: 10px auto;
+    text-align: center;
+}
 table{
     margin: 0px auto;
     border: 0px;
@@ -156,7 +170,8 @@ li {
     margin: 0 auto;
     display: block;
     font-size: 1em;
-    background: #FF790E;
+    background: #f08731;
+    border-radius: 5px;
 }
 
 [type='submit'] {

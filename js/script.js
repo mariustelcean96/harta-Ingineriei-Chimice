@@ -1,10 +1,11 @@
-const MyHeading = document.querySelector('h1');
+/*const MyHeading = document.querySelector('h5');
 MyHeading.textContent = "Primul mediu online integrat în care studenţii îşi pot spune părerea despre învăţământul universitar, iar acea părere contează!"
-
+*/
 function FuncţiaDeAur() {
     document.getElementById("demo7").innerHTML = "Continuă! Vei reuşi să realizezi ceea ce ţi-ai propus!";
     }
-    /* Următoarea sintaxă e preluată din JavaScript Basics | MDN */
+    
+    /* Următoarea sintaxă e preluată din JavaScript Basics | MDN 
 let myButton = document.getElementById('b1');
 let myHeading = document.querySelector('h2');
 
@@ -26,4 +27,4 @@ if(!localStorage.getItem('name')) {
     }
     myButton.onclick = function() {
         setUserName();
-    }
+    } */

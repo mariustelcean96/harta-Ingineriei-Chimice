@@ -2,12 +2,12 @@
 <html lang="ro-RO">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="/CSS/mystyle.css">
+        <link rel="stylesheet" type="text/css" href="CSS/mystyle.css">
         <title>Pagina de test CSS</title>
         <style>
         #replingrad {
             border-radius: 20px;
-            margin: 500px auto;
+            margin: 200px auto;
             width: 300px;
             height:300px;
             text-align: center;
@@ -33,31 +33,31 @@
 
         #anim {
             animation-name: colorful;
-            animation-duration: 4s;
+            animation-duration: 6s;
             animation-iteration-count: infinite;
+            position: relative;
+            animation-timing-function: cubic-bezier(.25,.25,.75,.75);
         }
 
         @keyframes colorful {
             0% {
-                background:red;
+                background: rgb(59, 148, 59);
+                left: 20%;
+                top: 20%;
+                opacity: .1;
             }
-            10% {
-                background:orange;
+            50% {
+                background: rgb(59, 148, 59);
+                top: 11%;
+                left: 11%;
+                opacity: .5;
             }
-            20% {
-                background:yellow;
-            }
-            30% {
-                background: green;
-            }
-            60% {
-                background: blue;
-            }
-            80% {
-                background:indigo;
-            }
+
             100% {
-                background: violet;
+                background: rgb(59, 148, 59);
+                top: 1%;
+                left: 1%;
+                opacity: 1;
             }
         }
         </style>
@@ -70,6 +70,7 @@
                 </ul>
             </nav>
         </header>
+        <main>
         <p>Câteva exemple cu repeating linear gradient:</p>
     <div id="anim">
         <div id="avertizare"></div>
@@ -78,4 +79,26 @@
     </div>
         <div id="replingrad">Acesta este un element div.</div> 
     </body>
-</html>
+    <p id="demo1">Voi duce sau nu voi duce acest proiect la bun sfârşit?</p>
+    <button type="button" onclick='document.getElementById("demo1").innerHTML = "Eu zic că da."'>Răspuns</button>
+    <div id="div-right">
+        <form>
+            <article>Vrei să te ţinem la curent?</article>
+            <label for="email">E-mail:</label>
+                <input type="text" id="email" name="email">
+            <fieldset>
+                <legend>Eşti:</legend>
+                <input type="radio" id="elev" value="elev" name="statut">
+                <label for="elev">elev/(ă)</label><br>
+                <input type="radio" id="student" value="student" name="statut">
+                <label for="student">student/(ă)</label><br>
+                <input type="radio" id="absolvent" value="absolvent" name="status">
+                <label for="absolvent">absolvent/(ă)</label><br>
+                <input type="radio" id="altceva" value="altceva" name="statut">
+                <label for="altceva">altceva</label><br>
+            </fieldset>
+                <input type="submit" name="email">
+        </form>
+    </div>
+    </main>
+    </html>
