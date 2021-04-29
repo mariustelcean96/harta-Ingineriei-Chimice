@@ -6,7 +6,7 @@ height: 1px;
 }
 
 html {
-    background:beige;
+    background:#f5f5dc;
     }
 
 #navbar {
@@ -44,7 +44,7 @@ body {
    
 }
 a:link, a:visited {
-    background:#3c558b; 
+    background:#40b0a6; 
     padding: 10px 10px;
     color: white; 
     display: inline-block;
@@ -53,13 +53,13 @@ a:link, a:visited {
     text-align: center;
 }
 a:hover, a:active {
-        background-color: rgb(37, 36, 133);
+        background-color: rgb(34, 139, 131);
         transform: scale(1.1);
         border-radius: 2px;
         
 }    
 h1 {
-    color: rgb(14, 153, 153);
+    color: #265A5A;
     font-size:1em;
     text-align: center;
     padding: 20px 0;
@@ -70,7 +70,7 @@ h1 {
     }
 
 h2 {
-    color:rgb(14, 153, 153);
+    color: #265A5A;
     font-size: .8em;
     text-align: center;
     border-radius: 5px;
@@ -90,7 +90,7 @@ h2 {
 p {
     font-size: 19px;
     text-align: center;
-    color:CadetBlue;
+    color:3a4b4b;
     padding: 20px;
     letter-spacing: 2px;
     }

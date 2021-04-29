@@ -31,6 +31,10 @@
             );
         }
 
+        p:focus {
+            background-color:red;
+        }
+
         #anim {
             animation-name: colorful;
             animation-duration: 6s;
@@ -71,7 +75,7 @@
             </nav>
         </header>
         <main>
-        <p>Câteva exemple cu repeating linear gradient:</p>
+        <p tabindex="0">Câteva exemple cu repeating linear gradient:</p>
     <div id="anim">
         <div id="avertizare"></div>
         <h3>Te rog frumos să treci în bucatărie şi să continui cu renovarea.</h3>
@@ -79,10 +83,9 @@
     </div>
         <div id="replingrad">Acesta este un element div.</div> 
     </body>
-<<<<<<< HEAD
-    <p id="demo1">Voi duce sau nu voi duce acest proiect la bun sfârşit?</p>
+    <p id="demo1" tabindex="0">Voi duce sau nu voi duce acest proiect la bun sfârşit?</p>
     <button type="button" onclick='document.getElementById("demo1").innerHTML = "Eu zic că da."'>Răspuns</button>
-    <div id="div-right">
+    <div id="div-right" tabindex="0">
         <form>
             <article>Vrei să te ţinem la curent?</article>
             <label for="email">E-mail:</label>
@@ -103,6 +106,3 @@
     </div>
     </main>
     </html>
-=======
-</html>
->>>>>>> 3102e4f6a8bd74ddbda42f00f7c95d7da4b96463
