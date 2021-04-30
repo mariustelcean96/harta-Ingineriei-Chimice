@@ -1,3 +1,4 @@
+            /* Accessibility */
 .sr-only {
 position: absolute;
 left: -10000px;
@@ -5,10 +6,12 @@ width: 1px;
 height: 1px;
 }
 
+            /* Root of HTML pages */
 html {
     background:#f5f5dc;
     }
 
+            /* Header */
 #navbar {
 position: fixed;
 top: 0px;
@@ -19,10 +22,10 @@ background: linear-gradient(145deg, hsl(60, 15%, 45%), hsl(60, 20%, 90%));
     }
 
   nav ul {
-margin: 28px;
-padding: 5px 5px 5px 5px;
-text-align: center;
-font-size: .9em;
+    margin: 28px;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    font-size: .9em;
   }  
 
   nav li {
@@ -34,15 +37,35 @@ font-size: .9em;
     width:10%
     }
 
+        /*The Body of the HTML page */
 body {
-   background: beige;
-   display: block;
-   font-family: monospace, serif;
-   margin: 0 auto;
-   padding: 20px 20px 20px 20px;
+    background: beige;
+    display: block;
+    font-family: monospace, serif;
+    margin: 0 auto;
+    padding: 20px 20px 20px 20px;
     width: 800px;
-   
 }
+
+/* @media for mobile devices */
+
+@media (max-height: 600px)
+{
+body {
+    font-size: 0.7em;
+    width: 300px;
+}
+#navbar {
+    width: 15%;
+    height: 100%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+}
+
 a:link, a:visited {
     background:#40b0a6; 
     padding: 10px 10px;
