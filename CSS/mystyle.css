@@ -1,9 +1,9 @@
             /* Accessibility */
 .sr-only {
-position: absolute;
-left: -10000px;
-width: 1px;
-height: 1px;
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
 }
 
             /* Root of HTML pages */
@@ -13,12 +13,12 @@ html {
 
             /* Header */
 #navbar {
-position: fixed;
-top: 0px;
-left: 0px;
-width: 15%;
-height: 100%;
-background: linear-gradient(145deg, hsl(60, 15%, 45%), hsl(60, 20%, 90%));
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 15%;
+    height: 100%;
+    background: linear-gradient(145deg, hsl(60, 15%, 45%), hsl(60, 20%, 90%));
     }
 
   nav ul {
@@ -37,7 +37,7 @@ background: linear-gradient(145deg, hsl(60, 15%, 45%), hsl(60, 20%, 90%));
     width:10%
     }
 
-        /*The Body of the HTML page */
+        /*The body of the HTML page */
 body {
     background: beige;
     display: block;
@@ -52,17 +52,19 @@ body {
 @media (max-height: 600px)
 {
 body {
-    font-size: 0.7em;
-    width: 300px;
+    font-size: 1.7vw;
+    width: 90vmin;
 }
 #navbar {
-    width: 15%;
     height: 100%;
 }
 
 nav ul {
     margin: 0;
     padding: 0;
+}
+p {
+    font-size: 0.7em;
 }
 }
 
@@ -104,19 +106,20 @@ h2 {
     }
 
     h3 {
-        text-align: center;
-        color: red;
-        font-size: larger;
-        letter-spacing: 1px;
-        text-shadow: 1.5px 1.5px 1.5px rgb(169, 179, 174);
+    text-align: center;
+    color: red;
+    font-size: larger;
+    letter-spacing: 1px;
+    text-shadow: 1.5px 1.5px 1.5px rgb(169, 179, 174);
     }
 p {
-    font-size: 19px;
+    font-size: 1em;
     text-align: center;
-    color:3a4b4b;
-    padding: 20px;
+    color:#3a4b4b;
+    padding: 10px;
     letter-spacing: 2px;
     }
+
 .titluriprinc {
     color:rgb(9, 22, 22); 
     text-align:center; 
@@ -159,7 +162,9 @@ img {
     display: block;
     margin: 0 auto;
     border: 1px solid powderblue;
-    width: 50%
+    max-width: 100%;
+    height: auto;
+    width: 350px;
 }
 
 figcaption {
@@ -178,6 +183,7 @@ figure {
     max-width: 600px;
     margin: auto;
 }
+
 li {
     padding: 5px;
     letter-spacing: 1px;
