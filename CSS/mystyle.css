@@ -16,20 +16,20 @@ html {
     position: fixed;
     top: 0px;
     left: 0px;
-    width: 15%;
-    height: 100%;
-    background: linear-gradient(145deg, hsl(60, 15%, 45%), hsl(60, 20%, 90%));
+    width: 100%;
+    max-height: 15%;
+    background: linear-gradient(145deg, hsl(60, 15%, 65%), hsl(60, 20%, 75%));
     }
 
   nav ul {
-    margin: 28px;
-    padding: 5px 5px 5px 5px;
+    margin: 4px 4px;
+    padding: 1px 2px 1px 2px;
     text-align: center;
-    font-size: .9em;
+    font-size: .8em;
   }  
 
   nav li {
-     display: inline-block;     
+     display: inline;     
   }
 
   #right {
@@ -49,12 +49,13 @@ body {
 
 /* @media for mobile devices */
 
-@media (max-height: 600px)
+@media (max-width: 1000px) 
 {
-body {
-    font-size: 1.7vw;
-    width: 90vmin;
-}
+    body {
+        font-size: 1.5vw;
+        width: 70vmin;
+    }
+
 #navbar {
     height: 100%;
 }
@@ -62,13 +63,10 @@ body {
 nav ul {
     margin: 0;
     padding: 0;
-}
-p {
-    font-size: 0.7em;
-}
+} 
 }
 
-a:link, a:visited {
+nav a:link, nav a:visited, li a:link, li a:visited {
     background:#40b0a6; 
     padding: 10px 10px;
     color: white; 
@@ -77,7 +75,7 @@ a:link, a:visited {
     margin: 1px;
     text-align: center;
 }
-a:hover, a:active {
+nav a:hover, nav a:active, li a:hover, li a:active {
         background-color: rgb(34, 139, 131);
         transform: scale(1.1);
         border-radius: 2px;
@@ -105,7 +103,7 @@ h2 {
     padding: 10px;
     }
 
-    h3 {
+h3 {
     text-align: center;
     color: red;
     font-size: larger;
@@ -159,12 +157,10 @@ text-align:justify;
 }
 
 img {
-    display: block;
     margin: 0 auto;
     border: 1px solid powderblue;
     max-width: 100%;
     height: auto;
-    width: 350px;
 }
 
 figcaption {
@@ -172,13 +168,10 @@ figcaption {
     background-color: #222;
     padding: 3px;
     color: white;
-    max-width: 290px;
-    margin: 1px 0 0 149px;
+    
 }
 
 figure {
-    display: flex;
-    flex-flow: column;
     padding: 3px;
     max-width: 600px;
     margin: auto;
@@ -196,9 +189,8 @@ li {
     padding: 0.5em 0.5em 0.5em 0.5em;
     margin-top: 3px;
     margin-bottom: 3px;
-    margin: 0 auto;
     display: block;
-    font-size: 1em;
+    font-size: .7em;
     background: #f08731;
     border-radius: 5px;
 }
