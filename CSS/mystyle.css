@@ -38,8 +38,8 @@ html {
     }
 
         /*The body of the HTML page */
-body {
-    background: beige;
+
+.bodyContainer {
     display: block;
     font-family: monospace, serif;
     margin: 0 auto;
