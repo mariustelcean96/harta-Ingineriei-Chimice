@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="ro-RO">
+
 <head>
   <meta charset="utf-8">
-  <title>Hai la facultate - Transparentizăm învăţământul superior din România</title>
+  <title>Harta ingineriei chimice din România</title>
   <link rel="stylesheet" type="text/css" href="CSS/mystyle.css">
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
   crossorigin=""/>
@@ -11,57 +14,13 @@
    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
    crossorigin=""></script>
 </head>
+
 <body>
-<!-- Site-ul va conține în cele din urmă toate informațiile esențiale de care are nevoie un viitor student pentru a găsi facultatea dorită.-->
-<div id="map" style="width: 100%; height: 550px"></div>
-
-<!--
-<header>
-  
-    <nav id="navbar">
-        <ul>
-            <li><a href="index.html">Acasă</a></li>
-            <li><a href="agregatorjoburi.htm" accesskey="a">Locuri de muncă</a></li>
-            <li><a href="campus-ubb-cluj.htm" accesskey="c">Campusul UBB Cluj-Napoca</a></li>
-            <li><a href="facultateX.htm" accesskey="f">FCIC Cluj-Napoca</a></li>
-        </ul>
-    </nav>
-    <h1>Ajută-ne să facem învăţământul universitar mai transparent.</h1>
-</header>
-<main class="bodyContainer">
-        <p class="titluriprinc">Alege să fii informat. Îţi vei fi recunoscător mai târziu.</p>
-        <form action="">
-            <label for="facultati">Alege o facultate/universitate:</label>
-            <select id="facultati" name="facultati">
-                <option value="facultateademedicinaoradea">Facultatea de Medicină, Oradea</option>
-                <option value="facultateademedicinasibiu">Facultatea de Medicină, Sibiu</option>
-                <option value="facultateadechimieingineriechimicacluj">Facultatea de Chimie şi Inginerie Chimică, Cluj</option>
-                <option value="">Aici as vrea sa introduc toate facultăţile din ţară</option>
-            </select>
-        </form>
-            <h2>Hartă interactivă cu toate universităţile din ţara noastră.</h2>
-                
-                    
-        <p class="titluriprinc" title="Sigur vom reuşi.">Fiecare facultate a fiecărei universităţi va avea câte o pagină proprie. </p>
-            <h2>Ce ne-a motivat să concepem aceste site şi de ce ar trebui să fii informat cu privire la facultatea pe care vrei să o urmezi?</h2>
-        <p class="titluriprinc"><em>Motivaţie!...</em></p>
-        <p class="titluriprinc" title="Doar că trebuie muultă muncă.">Apoi aş vrea să inserez un desfăşurător pe judeţe, localităţi, facultăţi. Rezultatele afişate să poată fi filtrate în funcţie de universitate, facultate, profil, notă VLF.</p>
-        <p class="textdeinlocuit" title="temporar">(Desfăşurător cu interogări din baze de date.)</p>
-        <p class="titluriprinc" title="Îmi place să pun metadata de genul acesta.">Urmează o prezentare cu diaporame care se derulează singure şi în care sunt redate impresiile celor care au folosit site-ul.</p>
-        <p class="textdeinlocuit" title="Ok, gata. Am învăţat sintaxa.">Recenzia1, Recenzia2, şamd.</p>
-            <article>text1</article>
-            <article>text2</article>
-            <article>etc.</article>
-                <button type="button"
-                onclick="document.getElementById('demo').innerHTML = Date()">Apasă aici pentru a vedea data şi ora exactă.</button>
-                <p id="demo"></p>
-            <h5>Test</h5> 
-<button id="b1" type="button">Schimbă utilizatorul</button>
-<script src="js/script.js"></script>-->
-
-</main>
-<footer>&copy; 2021 Hai la facultate!</footer>
+  <!-- Site-ul va conține în cele din urmă toate informațiile esențiale de care are nevoie un viitor student pentru a găsi facultatea/jobul dorite.-->
+  <div id="map" style="width: 100%; height: 800px;"></div>
+  <footer>&copy; 2022 Harta ingineriei chimice</footer>
 </body>
+
 <script>
   var map = L.map('map').setView([45.951, 24.675], 7);
   L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
@@ -72,10 +31,7 @@
   zoomOffset: -1,
   accessToken: 'pk.eyJ1IjoibWFyaXVzdGVsY2VhbiIsImEiOiJja25lOGJjdTgxcDRoMnBtdTQzMjFyanhjIn0.RO6ggGYC5XY6-21ZNwtlwA'
 }).addTo(map);
-  var markerTeraplast = L.marker([47.0608, 24.4223]).addTo(map);
-    markerTeraplast.bindPopup('Facultatea 2.');
-  var markerEmersonCluj = L.marker([46.79373, 23.66319]).addTo(map);
-    markerEmersonCluj.bindPopup('FCIC - coordonate gresite');
+  
 // Drop down menu to filter based on region
   var legendRegion = L.control({position: 'topright'});
   legendRegion.onAdd = function (map) {
@@ -86,14 +42,36 @@
   };
   legendRegion.addTo(map);
     
-// Drop down menu to filter based on specialty
+// Drop down menu to filter based on industry type
 var legendIndustry = L.control({position: 'topright'});
   legendIndustry.onAdd = function (map) {
     var div = L.DomUtil.create('div', 'info legendIndustry');
-    div.innerHTML = '<select><option>chimie organica</option><option>biochimie</option><option>chimie industriala</option></select>';
+    div.innerHTML = '<select><option>produse din PVC</option><option>farmaceutic</option><option>etc</option></select>';
     div.firstChild.onmousedown = div.firstChild.ondblclick = L.DomEvent.stopPropagation;
     return div;
   };
   legendIndustry.addTo(map);
 </script>
+
+<!-- Regiuni Ro
+https://ro.wikipedia.org/wiki/Regiunile_de_dezvoltare_ale_Rom%C3%A2niei
+-->
+
+<!-- N-V -->
+<script src="js/bN.js"></script>
+<script src="js/cj.js"></script>
+
+<!-- Centru -->
+<script src="js/ms.js"></script>
+<script src="js/bv.js"></script>
+
+
+<!-- Template
+  var markerAzomures = L.marker([46.5158, 24.505]).addTo(map);
+markerAzomures.bindPopup('
+
+
+'
+    );
+-->
 </html>
