@@ -12,3 +12,15 @@ markerAzomures.bindPopup(`
 </div>
 
 `);
+
+var emailSighisoara = L.marker([46.23442198899513, 24.833163641559942]).addTo(map);
+emailSighisoara.bindPopup(`
+
+<div class="comp-container">
+  <div class="comp-intro">
+    Email de Sighişoara – farbicant de produse ceramice de uz casnic
+  </div>
+  <a href="https://emaildesighisoara.ro/" target="_blank">site</a>
+</div>
+
+`);
