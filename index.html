@@ -18,7 +18,7 @@
 <body>
   <!-- Site-ul va conține în cele din urmă toate informațiile esențiale de care are nevoie un viitor student pentru a găsi facultatea/jobul dorite.-->
   <div id="map" style="width: 100%; height: 800px;"></div>
-  <footer>&copy; 2022 Harta ingineriei chimice</footer>
+  <footer>2022 Harta ingineriei chimice</footer>
 </body>
 
 <script>
@@ -60,18 +60,32 @@ https://ro.wikipedia.org/wiki/Regiunile_de_dezvoltare_ale_Rom%C3%A2niei
 <!-- N-V -->
 <script src="js/bN.js"></script>
 <script src="js/cj.js"></script>
+<script src="js/mm.js"></script>
 
 <!-- Centru -->
 <script src="js/ms.js"></script>
 <script src="js/bv.js"></script>
 
+<!-- Est -->
+<script src="js/is.js"></script>
+
+<!-- Sud -->
+<script src="js/b.js"></script>
 
 <!-- Template
-  var markerAzomures = L.marker([46.5158, 24.505]).addTo(map);
-markerAzomures.bindPopup('
 
+var markerTest = L.marker([45.76, 24.76]).addTo(map);
+markerTest.bindPopup(`
 
-'
-    );
+<div class="comp-container">
+  <div class="comp-intro">
+    Descriere scurtă a companiei
+  </div>
+  <a href="#" target="_blank">Legătura 1</a>
+  <a href="#" target="_blank">Legătura 2</a>
+  <a href="#" target="_blank">Legătura 3</a>
+</div>
+
+`);
 -->
 </html>

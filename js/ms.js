@@ -1,7 +1,14 @@
 var markerAzomures = L.marker([46.5158, 24.505]).addTo(map);
-markerAzomures.bindPopup('Azomureș – producător de îngrăsăminte chimice ' + 
-    'Programul ' + '<a href="https://www.azomures.com/absolvent/">Absolvent +</a>' + '<br>' 
-     + 'Oportunitatea de a fi <a href="https://www.azomures.com/operator-in-industrie/">operator în industrie</a><br> ' + 
-    '<a href="https://www.azomures.com/internship/">Stagiu de practică (Internship)</a><br>' + 
-    '<a href="https://www.azomures.com/posturi-vacante/">Posturi vacante</a>'
-    );
+markerAzomures.bindPopup(`
+
+<div class="comp-container">
+  <div class="comp-intro">
+    Azomureș – producător de îngrăsăminte chimice
+  </div>
+  Programul: <a href="https://www.azomures.com/absolvent/">Absolvent +</a>
+  Oportunitatea de a fi: <a href="https://www.azomures.com/operator-in-industrie/">operator în industrie</a>
+  <a href="https://www.azomures.com/internship/">Stagiu de practică (Internship)</a>
+  <a href="https://www.azomures.com/posturi-vacante/">Posturi vacante</a>
+</div>
+
+`);
