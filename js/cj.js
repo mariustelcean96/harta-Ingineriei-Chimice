@@ -41,3 +41,15 @@ markerMDPICluj.bindPopup(`
 </div>
 
 `);
+
+var markerCesaromSanex = L.marker([46.784786874684535, 23.636220606622437]).addTo(map);
+markerCesaromSanex.bindPopup(`
+
+<div class="comp-container">
+  <div class="comp-intro">
+    Cesarom | Sanex - producător de plăci ceramice din Cluj-Napoca, parte a unui grup mai mare.
+  </div>
+  <a href="https://sanex.ro/cariere/" target="_blank">Cariere</a>
+</div>
+
+`);
