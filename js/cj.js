@@ -53,3 +53,18 @@ markerCesaromSanex.bindPopup(`
 </div>
 
 `);
+
+
+
+var markerTeraCrystal = L.marker([46.769127214227886, 23.54953510983572]).addTo(map);
+markerTeraCrystal.bindPopup(`
+
+<div class="comp-container">
+  <div class="comp-intro">
+    TeraCrystal - Dincolo de cristal
+  </div>
+  <a href="https://teracrystal.com/career/" target="_blank">Cariere</a>
+  <a href="/imaginijob/teracrystal-research-assistant-junior-scientist.pdf" target="_blank">Anunţ Research Assistant Junior Scientist</a>
+</div>
+
+`);
