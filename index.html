@@ -19,7 +19,7 @@
 
 <body>
   <!-- Site-ul va conține în cele din urmă toate informațiile esențiale de care are nevoie un viitor student pentru a găsi facultatea/jobul dorite.-->
-  <div id="map" style="width: 100%; height: 800px;"></div>
+  <div id="map"></div>
   <footer>
     2022 Harta ingineriei chimice<br>
     Site în construcţie
@@ -63,19 +63,27 @@ https://ro.wikipedia.org/wiki/Regiunile_de_dezvoltare_ale_Rom%C3%A2niei
 -->
 
 <!-- N-V -->
+<script src="js/bh.js"></script>
 <script src="js/bN.js"></script>
 <script src="js/cj.js"></script>
 <script src="js/mm.js"></script>
+<script src="js/sj.js"></script>
 
 <!-- N-E -->
 <script src="js/nt.js"></script>
+<script src="js/sv.js"></script>
 
 <!-- S - Muntenia -->
 <script src="js/db.js"></script>
+<script src="js/if.js"></script>
+<script src="js/ph.js"></script>
 
 <!-- Centru -->
+<script src="js/ab.js"></script>
 <script src="js/ms.js"></script>
 <script src="js/bv.js"></script>
+<script src="js/sb.js"></script>
+
 
 <!-- Est -->
 <script src="js/is.js"></script>
@@ -91,7 +99,7 @@ https://ro.wikipedia.org/wiki/Regiunile_de_dezvoltare_ale_Rom%C3%A2niei
 
 <!-- Template
 
-var markerTest = L.marker([45.76, 24.76]).addTo(map);
+var markerTest = L.marker([]).addTo(map);
 markerTest.bindPopup(`
 
 <div class="comp-container">

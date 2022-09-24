@@ -68,3 +68,68 @@ markerTeraCrystal.bindPopup(`
 </div>
 
 `);
+
+var markerFarmec = L.marker([46.7822689560153, 23.606299997789165]).addTo(map);
+markerFarmec.bindPopup(`
+
+<div class="comp-container">
+  <div class="comp-intro">
+    Farmec angajează absolvenţi de inginerie chimică pentru partea de cercetare dar şi în producţie.
+  </div>
+  <a href="https://www.farmec.ro/despre-farmec/cariere.html" target="_blank">Cariere</a>
+</div>
+`);
+
+var markerHannaCluj = L.marker([46.784266123922364, 23.546897998030403]).addTo(map);
+markerHannaCluj.bindPopup(`
+
+<div class="comp-container">
+  <div class="comp-intro">
+    Hanna Instruments - fabrica din Nușfalău, jud. Sălaj. Angajează
+    chimiști și ingineri chimiști.
+  </div>
+  <a href="https://hannainst.ro/cariera" target="_blank">Cariere</a>
+</div>
+`);
+
+var markerGlueChimGilau = L.marker([46.75037049172422, 23.383992241100326]).addTo(map);
+markerGlueChimGilau.bindPopup(`
+
+<div class="comp-container">
+  <div class="comp-intro">
+    Glue Chim angajează chimişti şi ingineri chimişti 
+    (începători şi avansaţi pentru cercetare, dezvoltare, 
+    controlul calităţii şi suport tehnic).
+  </div>
+  <a href="mailto:secretariat@gluechim.ro" target="_blank">Recrutare</a>
+  <a href="http://www.gluechim.ro/" target="_blank">Site</a>
+</div>
+`);
+
+var markerINCERC = L.marker([46.756725686589405, 23.54778211707186]).addTo(map);
+markerINCERC.bindPopup(`
+
+<div class="comp-container">
+  <div class="comp-intro">
+    Institutul Național de Cercetare-Dezvoltare în Construcții 
+    caută chimist sau ing. chimist pentru postul de cercetător 
+    ştiinţific pentru analiza materialelor de construcţii.
+  </div>
+  <a href="https://www.facebook.com/bianca.stoean" target="_blank">Bianca Stoean (pers. de legătură)</a>
+  <a href="https://www.incd.ro/" target="_blank">Site</a>
+</div>
+`);
+
+var markerMagicSilverDistribution = L.marker([46.76763369971192, 23.596670726865536]).addTo(map);
+markerMagicSilverDistribution.bindPopup(`
+
+<div class="comp-container">
+  <div class="comp-intro">
+    Magic Silver Distribution caută laborant/ă
+    (proaspăt absolvent/ă sau în an terminal)
+    care să deţină cunoştinţe de laborator.
+  </div>
+  <a href="https://www.facebook.com/octavian.truta.3" target="_blank">Octavian Truța (pers. de legătură)</a>
+  <a href="mailto:cotetcosmin@yahoo.com" target="_blank">Cosmin Coteţ (prof. FCIC Cluj-Napoca – pers. de legătură)</a>
+</div>
+`);

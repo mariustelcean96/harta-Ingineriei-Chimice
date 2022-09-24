@@ -11,7 +11,7 @@ html {
     background:#f5f5dc;
     }
 
-            /* Header */
+            /* Header 
 #navbar {
     position: fixed;
     top: 0px;
@@ -35,9 +35,13 @@ html {
   #right {
     float: right;
     width:10%
-    }
-
+}
+*/
         /*The body of the HTML page */
+
+#map {
+    height: 400px;       
+}
 
 .bodyContainer {
     display: block;
@@ -66,9 +70,13 @@ html {
 
 @media (max-width: 1000px) 
 {
+    #map {
+      height: 80%;
+    }
     body {
         font-size: 1.5vw;
-        width: 70vmin;
+        width: 100%;
+        height: 100%;
     }
 
 #navbar {
@@ -81,6 +89,12 @@ nav ul {
 } 
 }
 
+@media (min-width: 600px) 
+{
+    #map {
+      height: 700px;
+    }
+}
 nav a:link, nav a:visited, li a:link, li a:visited {
     background:#40b0a6; 
     padding: 10px 10px;
@@ -196,10 +210,8 @@ li {
     padding: 5px;
     letter-spacing: 1px;
 }
-#mapid {
-    height: 100px;
-    
-}
+
+
 [type='button'] {
     padding: 0.5em 0.5em 0.5em 0.5em;
     margin-top: 3px;
